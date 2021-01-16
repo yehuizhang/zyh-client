@@ -12,5 +12,3 @@ workflows:
       - react/coverage:
           requires:
             - react/install
-      - codecov/upload:
-          file: "./artifacts/coverage"
