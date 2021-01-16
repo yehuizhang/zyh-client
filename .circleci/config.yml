@@ -7,8 +7,9 @@ jobs:
     docker:
       - image: circleci/node:10
     steps:
+      - run: yarn test --ci --coverage
       - codecov/upload:
-          file: ./artifacts/coverage
+          file: ./coverage
 workflows:
   client:
     jobs:
@@ -16,9 +17,6 @@ workflows:
       - react/test:
           requires:
             - react/install
-      - react/coverage:
-          requires:
-            - react/install
       - upload-coverage:
           requires:
-            - react/coverage
+            - react/install
