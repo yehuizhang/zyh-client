@@ -2,6 +2,13 @@ version: 2.1
 orbs:
   react: thefrontside/react@0.2.0
   codecov: codecov/codecov@1.1.3
+jobs:
+  upload-coverage:
+    executor: default
+    working_directory: ~/artifacts
+    steps:
+      - codecov/upload:
+          path: ./coverage
 workflows:
   client:
     jobs:
@@ -12,3 +19,6 @@ workflows:
       - react/coverage:
           requires:
             - react/install
+      - upload-coverage:
+          requires:
+            - react/coverage
