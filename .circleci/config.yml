@@ -4,7 +4,8 @@ orbs:
   codecov: codecov/codecov@1.1.3
 jobs:
   upload-coverage:
-    executor: default
+    docker:
+      - image: circleci/node:10
     working_directory: ~/artifacts
     steps:
       - codecov/upload:
