@@ -6,10 +6,9 @@ jobs:
   upload-coverage:
     docker:
       - image: circleci/node:10
-    working_directory: ~/artifacts
     steps:
       - codecov/upload:
-          file: ./coverage
+          file: ./artifacts/coverage
 workflows:
   client:
     jobs:
