@@ -8,7 +8,7 @@ jobs:
     working_directory: ~/artifacts
     steps:
       - codecov/upload:
-          path: ./coverage
+          file: ./coverage
 workflows:
   client:
     jobs:
