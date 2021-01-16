@@ -1,9 +1,7 @@
 {
   "name": "zyh-client",
   "author": {
-    "name": "Yehui Zhang",
-    "email": "yehuizhang@outlook.com",
-    "url": "https://yehuizhang.com"
+    "name": "Yehui Zhang"
   },
   "version": "0.1.0",
   "private": true,
