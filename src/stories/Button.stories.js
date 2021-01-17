@@ -2,13 +2,15 @@ import React from 'react';
 
 import { Button } from './Button';
 
-export default {
+const meta = {
   title: 'Example/Button',
   component: Button,
   argTypes: {
     backgroundColor: { control: 'color' },
   },
 };
+
+export default meta;
 
 const Template = (args) => <Button {...args} />;
 
