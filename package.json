@@ -30,7 +30,8 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
-    "lint": "eslint --fix src/**/*.js"
+    "lint": "eslint --fix src/**/*.js",
+    "cm": "git-cz"
   },
   "eslintConfig": {
     "extends": [
@@ -66,6 +67,7 @@
     "@storybook/node-logger": "^6.1.14",
     "@storybook/preset-create-react-app": "^3.1.5",
     "@storybook/react": "^6.1.14",
+    "cz-conventional-changelog": "3.3.0",
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-prettier": "^3.3.1"
   },
@@ -88,5 +90,20 @@
     "trailingComma": "es5",
     "bracketSpacing": true,
     "jsxBracketSameLine": false
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": -10
+      }
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
