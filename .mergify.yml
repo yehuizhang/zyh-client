@@ -1,0 +1,18 @@
+pull_request_rules:
+  - name: automatic merge for Dependabot pull requests
+    conditions:
+      - author~=^dependabot(|-preview)\[bot\]$
+      - check-success=Travis CI - Pull Request
+    actions:
+      merge:
+        method: merge
+  - name: Automatic merge on approval
+    conditions:
+      - check-success=Travis CI - Pull Request
+      - check-success=codecov/project
+      - check-success=DeepScan
+      - base=master
+      - label!=work-in-progress
+    actions:
+      merge:
+        method: merge
