@@ -1,9 +1,7 @@
 {
   "name": "zyh-client",
   "author": {
-    "name": "Yehui Zhang",
-    "email": "yehuizhang@outlook.com",
-    "url": "https://yehuizhang.com"
+    "name": "Yehui Zhang"
   },
   "version": "0.1.0",
   "private": true,
@@ -95,14 +93,9 @@
     "jsxBracketSameLine": false
   },
   "jest": {
-    "coverageThreshold": {
-      "global": {
-        "branches": 80,
-        "functions": 80,
-        "lines": 80,
-        "statements": -10
-      }
-    }
+    "coveragePathIgnorePatterns": [
+      "/stories"
+    ]
   },
   "config": {
     "commitizen": {
