@@ -69,11 +69,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-
-
-
-
 ## Tech Stack
 
 ### Development Tools
+
 - [Commitizen](https://github.com/commitizen/cz-cl)
+
+## Helper articles
+
+- [Automate NPM releases with Jest, codecov.io, Semantic Release, and TravisCI](https://levelup.gitconnected.com/automate-npm-releases-with-jest-codecov-io-semantic-release-and-travisci-eff812e97541)
