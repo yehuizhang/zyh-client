@@ -40,10 +40,14 @@
       "prettier/react"
     ],
     "plugins": [
-      "prettier"
+      "prettier",
+      "import"
     ],
     "rules": {
-      "prettier/prettier": "error"
+      "prettier/prettier": "error",
+      "import/order": 1,
+      "import/no-namespace": 2,
+      "import/newline-after-import": 2
     }
   },
   "browserslist": {
