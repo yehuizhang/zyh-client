@@ -65,7 +65,7 @@
   "devDependencies": {
     "@commitlint/cli": "^12.1.1",
     "@commitlint/config-conventional": "^12.1.1",
-    "@storybook/addon-actions": "^6.2.5",
+    "@storybook/addon-actions": "^6.2.7",
     "@storybook/addon-essentials": "^6.1.14",
     "@storybook/addon-links": "^6.2.5",
     "@storybook/node-logger": "^6.2.5",
